@@ -1,0 +1,26 @@
+:root{
+    --negro-difuminado: rgba(0,0,0,0.8);
+    --blanco: #FFFFFF;
+    --negro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+body {
+    font-size: 16px; 
+}
+.titulo {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: 400;
+    background-color: var(--negro-difuminado);
+}
+.contenedor{
+    margin: 0 auto;
+    padding: 4rem;
+}
