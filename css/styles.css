@@ -6,6 +6,7 @@
     --primario: #FFD700;
     --secundario: #0097A7;
     --gris: #757575;
+    --transparente: transparent;
 }
 html {
     font-size: 62.5%;
@@ -126,5 +127,257 @@ body {
     width: 100%;
     position: absolute;
     font-size: 24px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
 }
-  
+
+.footerP {
+    grid-column: 1/3;
+    grid-row: 1;
+    justify-self: end;
+}
+
+.icon-tabler {
+    grid-column: 3/4;
+    grid-row: 1;
+    justify-self: start;
+    padding-left: 15px;
+}
+
+/* Texto emergente 1*/
+input[id^="spoiler"]{
+    display: none;
+}
+
+input[id^="spoiler"] + label {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background: var(--transparente);
+    color: var(--transparente);
+    cursor: pointer;
+    transition: all .6s;
+    grid-column: 10/11;
+    grid-row: 2;
+    z-index: 1;
+}
+
+input[id^="spoiler"]:checked + label {
+    background: var(--transparente);
+    color: var(--transparente);
+}
+
+input[id^="spoiler"] ~ .spoiler {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0; 
+    padding: 10px; 
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all .6s;
+    grid-column: 7/10;
+    grid-row: 2;
+    height: 50% !important;
+    align-self: center;
+}
+
+input[id^="spoiler"]:checked + label + .spoiler{
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+}
+
+/* Texto emergente 2*/
+input[id^="spoiler1"]{
+    display: none;
+}
+
+input[id^="spoiler1"] + label {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background: var(--transparente);
+    color: var(--transparente);
+    cursor: pointer;
+    transition: all .6s;
+    grid-column: 10/11;
+    grid-row: 3;
+    z-index: 1;
+}
+
+input[id^="spoiler1"]:checked + label {
+    background: var(--transparente);
+    color: var(--transparente);
+}
+
+input[id^="spoiler1"] ~ .spoiler1 {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0; 
+    padding: 10px; 
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all .6s;
+    grid-column: 7/10;
+    grid-row: 3;
+    height: 50% !important;
+    align-self: center;
+}
+
+input[id^="spoiler1"]:checked + label + .spoiler1{
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+}
+
+/* Texto emergente 3*/
+input[id^="spoiler2"]{
+    display: none;
+}
+
+input[id^="spoiler2"] + label {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background: var(--transparente);
+    color: var(--transparente);
+    cursor: pointer;
+    transition: all .6s;
+    grid-column: 10/11;
+    grid-row: 4;
+    z-index: 1;
+}
+
+input[id^="spoiler2"]:checked + label {
+    background: var(--transparente);
+    color: var(--transparente);
+}
+
+input[id^="spoiler2"] ~ .spoiler2 {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0; 
+    padding: 10px; 
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all .6s;
+    grid-column: 7/10;
+    grid-row: 4;
+    height: 50% !important;
+    align-self: center;
+}
+
+input[id^="spoiler2"]:checked + label + .spoiler2{
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+}
+
+/* Texto emergente 4*/
+
+input[id^="spoiler3"]{
+    display: none;
+}
+
+input[id^="spoiler3"] + label {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background: var(--transparente);
+    color: var(--transparente);
+    cursor: pointer;
+    transition: all .6s;
+    grid-column: 10/11;
+    grid-row: 5;
+    z-index: 1;
+}
+
+input[id^="spoiler3"]:checked + label {
+    background: var(--transparente);
+    color: var(--transparente);
+}
+
+input[id^="spoiler3"] ~ .spoiler3 {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0; 
+    padding: 10px; 
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all .6s;
+    grid-column: 7/10;
+    grid-row: 5;
+    height: 50% !important;
+    align-self: center;
+}
+
+input[id^="spoiler3"]:checked + label + .spoiler3 {
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+}
+
+/* Texto emergente 5*/
+
+input[id^="spoiler4"]{
+    display: none;
+}
+
+input[id^="spoiler4"] + label {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background: var(--transparente);
+    color: var(--transparente);
+    cursor: pointer;
+    transition: all .6s;
+    grid-column: 10/11;
+    grid-row: 6;
+    z-index: 1;
+}
+
+input[id^="spoiler4"]:checked + label {
+    background: var(--transparente);
+    color: var(--transparente);
+}
+
+input[id^="spoiler4"] ~ .spoiler4 {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 10px auto 0; 
+    padding: 10px; 
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all .6s;
+    grid-column: 7/10;
+    grid-row: 6;
+    height: 50% !important;
+    align-self: center;
+}
+
+input[id^="spoiler4"]:checked + label + .spoiler4 {
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+}
