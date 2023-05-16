@@ -262,7 +262,7 @@ body {
 /* footer */
 .footer {
     color: var(--blanco);
-    background-color: #0F4C5C;
+    background-image: url(../img/Footer.png);
     width: 100%;
     position: absolute;
     font-size: 24px;
