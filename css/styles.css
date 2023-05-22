@@ -220,6 +220,11 @@ body {
     justify-content: center;
 }
 
+.marginCarta {
+    margin-left: 187px;
+    margin-right: 187px;
+}
+
 .center {
     text-align: center;
 }
